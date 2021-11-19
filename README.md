@@ -101,3 +101,9 @@
 
 - Mail: cat@dianping.com，
 - [**Issues**](https://github.com/dianping/cat/issues)
+
+### 构建
+依赖的JRE包在mvn-repo分支上
+org.unidal.framework 升级到2.5.0
+Failure to find org.codehaus.plexus:plexus-container-default:jar:3.1.0
+解决：在.m2仓库找到org.unidal.maven.plugins:codegen-maven-plugin:2.5.8版本的pom文件codegen-maven-plugin-2.5.8.pom用idea打开，点击父引用的default，跳转到default-2.5.8.pom文件中，将文件中foundation-service.version从3.1.0版本修改为4.0.0版本；
